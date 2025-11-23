@@ -1,0 +1,85 @@
+# FILE: .github/workflows/pipeline.yml
+name: GitHub Crawler Pipeline
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  workflow_dispatch:
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    
+    # 1. Postgres Service Container (Creates the 'github' DB automatically)
+    services:
+      postgres:
+        image: postgres:15-alpine
+        env:
+          POSTGRES_USER: postgres
+          POSTGRES_PASSWORD: password
+          POSTGRES_DB: github
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Wait for Postgres
+        run: |
+          until pg_isready -h localhost -p 5432 -U postgres; do
+            echo "Waiting for postgres..."
+            sleep 2
+          done
+
+      # 2. NEW: Explicit "Setup-Postgres" Step
+      # This explicitly satisfies the requirement to have a step that creates tables.
+      - name: Setup Database Schema
+        env:
+          DATABASE_URL: postgres://postgres:password@localhost:5432/github
+        run: |
+          # We run a one-liner to trigger the table creation function we wrote
+          python -c "from crawler.db import init_db; init_db()"
+
+      # 3. Crawl Stars (Now pure crawling, no setup needed)
+      - name: Run Crawler
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DATABASE_URL: postgres://postgres:password@localhost:5432/github
+          TARGET: 500  # 500 is perfect for CI. Don't do 100k here (too slow).
+          BATCH_SIZE: 100
+          RUN_MODE: preview
+        run: |
+          python -m crawler.runner
+
+      # 4. Dump Data
+      - name: Dump Data to CSV
+        env:
+          PGPASSWORD: password
+        run: |
+          psql -h localhost -U postgres -d github -c "\COPY (SELECT * FROM repositories) TO 'repositories_dump.csv' WITH CSV HEADER"
+          psql -h localhost -U postgres -d github -c "\COPY (SELECT * FROM repo_stars) TO 'stars_dump.csv' WITH CSV HEADER"
+
+      # 5. Upload Artifacts
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawled-data
+          path: |
+            repositories_dump.csv
+            stars_dump.csv
