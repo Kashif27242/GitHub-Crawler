@@ -61,9 +61,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DATABASE_URL: postgres://postgres:password@localhost:5432/github
-          TARGET: 500  # 500 is perfect for CI. Don't do 100k here (too slow).
+          TARGET: 10000  
           BATCH_SIZE: 100
-          RUN_MODE: preview
+          RUN_MODE: prod
         run: |
           python -m crawler.runner
 
