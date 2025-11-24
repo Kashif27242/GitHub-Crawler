@@ -1,0 +1,274 @@
+Timestamp,Log Message / Action,Repo Count / Delta,Requests Made,Points Burned,Technical Explanation
+16:10:53,🚀 Starting Crawler,Target: 100k,0,0,Pipeline Initialization
+16:10:57,✂️ Split Range (2008-2025),283949704,1,1,Check: Count > 1000. Split required.
+16:11:00,✂️ Split Range (2008-2016),19216414,1,1,Check: Count > 1000. Split required.
+16:11:03,✂️ Split Range (2008-2012),1080706,1,1,Check: Count > 1000. Split required.
+16:11:05,✂️ Split Range (2008-2010),131178,1,1,Check: Count > 1000. Split required.
+16:11:08,✂️ Split Range (2008-2009),27502,1,1,Check: Count > 1000. Split required.
+16:11:10,✂️ Split Range (Jan-Jul 2008),6415,1,1,Check: Count > 1000. Split required.
+16:11:14,✂️ Split Range (Jan-Apr 2008),1520,1,1,Check: Count > 1000. Split required.
+16:11:21,📥 COLLECT DATA,184 (Delta),3,3,Success: 1 Check + 2 Pages (184 items).
+16:11:23,✂️ Split Range (Feb-Apr 2008),1348,1,1,Check: 1348 > 1000. Split required.
+16:11:39,📥 COLLECT DATA,568 (Delta),7,7,Success: 1 Check + 6 Pages (568 items).
+16:12:01,📥 COLLECT DATA,795 (Delta),9,9,Success: 1 Check + 8 Pages (795 items).
+16:12:04,✂️ Split Range (Apr-Jul 2008),4935,1,1,Check: Count > 1000. Split required.
+16:12:06,✂️ Split Range (Apr-Jun 2008),2293,1,1,Check: Count > 1000. Split required.
+16:12:08,✂️ Split Range (Apr-May 2008),1064,1,1,Check: Count > 1000. Split required.
+16:12:22,📥 COLLECT DATA,545 (Delta),7,7,Success: 1 Check + 6 Pages (545 items).
+16:12:40,📥 COLLECT DATA,546 (Delta),7,7,Success: 1 Check + 6 Pages (546 items).
+16:12:42,✂️ Split Range (May-Jun 2008),1262,1,1,Check: 1262 > 1000. Split required.
+16:12:59,📥 COLLECT DATA,635 (Delta),8,8,Success: 1 Check + 7 Pages (635 items).
+16:13:18,📥 COLLECT DATA,667 (Delta),8,8,Success: 1 Check + 7 Pages (667 items).
+16:13:20,✂️ Split Range (Jun-Jul 2008),2686,1,1,Check: Count > 1000. Split required.
+16:13:22,✂️ Split Range (Jun-Jun 2008),1388,1,1,Check: Count > 1000. Split required.
+16:13:42,📥 COLLECT DATA,679 (Delta),8,8,Success: 1 Check + 7 Pages (679 items).
+16:14:00,📥 COLLECT DATA,753 (Delta),9,9,Success: 1 Check + 8 Pages (753 items).
+16:14:03,✂️ Split Range (Jun-Jul 2008),1352,1,1,Check: 1352 > 1000. Split required.
+16:14:22,📥 COLLECT DATA,700 (Delta),8,8,Success: 1 Check + 7 Pages (700 items).
+16:14:43,📥 COLLECT DATA,724 (Delta),9,9,Success: 1 Check + 8 Pages (724 items).
+16:14:45,✂️ Split Range (Jul '08 - Feb '09),21154,1,1,Check: Count > 1000. Split required.
+16:14:48,✂️ Split Range (Jul '08 - Nov '08),7481,1,1,Check: Count > 1000. Split required.
+16:14:50,✂️ Split Range (Jul '08 - Sep '08),3441,1,1,Check: Count > 1000. Split required.
+16:14:53,✂️ Split Range (Jul '08 - Aug '08),1508,1,1,Check: Count > 1000. Split required.
+16:15:16,📥 COLLECT DATA,739 (Delta),9,9,Success: 1 Check + 8 Pages (739 items).
+16:15:40,📥 COLLECT DATA,815 (Delta),10,10,Success: 1 Check + 9 Pages (815 items).
+16:15:44,✂️ Split Range (Aug '08 - Sep '08),1989,1,1,Check: Count > 1000. Split required.
+16:16:15,📥 COLLECT DATA,977 (Delta),11,11,Success: 1 Check + 10 Pages (977 items).
+16:16:18,✂️ Split Range (Aug '08 - Sep '08),1056,1,1,Check: 1056 > 1000. Precision Split.
+16:16:36,📥 COLLECT DATA,531 (Delta),7,7,Success: 1 Check + 6 Pages (531 items).
+16:16:54,📥 COLLECT DATA,622 (Delta),8,8,Success: 1 Check + 7 Pages (622 items).
+16:16:57,✂️ Split Range (Sep '08 - Nov '08),4121,1,1,Check: Count > 1000. Split required.
+16:16:59,✂️ Split Range (Sep '08 - Oct '08),1872,1,1,Check: Count > 1000. Split required.
+16:17:31,📥 COLLECT DATA,968 (Delta),11,11,Success: 1 Check + 10 Pages (968 items).
+16:17:58,📥 COLLECT DATA,993 (Delta),11,11,Success: 1 Check + 10 Pages (993 items).
+16:18:01,✂️ Split Range (Oct '08 - Nov '08),2327,1,1,Check: Count > 1000. Split required.
+16:18:03,✂️ Split Range (Oct '08 - Oct '08),1083,1,1,Check: 1083 > 1000. Precision Split.
+16:18:20,📥 COLLECT DATA,530 (Delta),7,7,Success: 1 Check + 6 Pages (530 items).
+16:18:40,📥 COLLECT DATA,643 (Delta),8,8,Success: 1 Check + 7 Pages (643 items).
+16:18:42,✂️ Split Range (Oct '08 - Nov '08),1314,1,1,Check: 1314 > 1000. Split required.
+16:19:03,📥 COLLECT DATA,737 (Delta),9,9,Success: 1 Check + 8 Pages (737 items).
+16:19:22,📥 COLLECT DATA,644 (Delta),8,8,Success: 1 Check + 7 Pages (644 items).
+16:19:25,✂️ Split Range (Nov '08 - Feb '09),13746,1,1,Hit Data Wall (13k). Drilling down.
+16:19:27,✂️ Split Range (Nov '08 - Dec '08),5980,1,1,Check: Count > 1000. Split required.
+16:19:31,✂️ Split Range (Nov '08 - Nov '08),2683,1,1,Check: Count > 1000. Split required.
+16:19:35,✂️ Split Range (Nov '08 - Nov '08),1403,1,1,Check: Count > 1000. Split required.
+16:19:53,📥 COLLECT DATA,614 (Delta),8,8,Success: 1 Check + 7 Pages (614 items).
+16:20:19,📥 COLLECT DATA,867 (Delta),10,10,Success: 1 Check + 9 Pages (867 items).
+16:20:22,✂️ Split Range (Nov '08 - Nov '08),1546,1,1,Check: Count > 1000. Split required.
+16:20:45,📥 COLLECT DATA,888 (Delta),10,10,Success: 1 Check + 9 Pages (888 items).
+16:21:06,📥 COLLECT DATA,771 (Delta),9,9,Success: 1 Check + 8 Pages (771 items).
+16:21:08,✂️ Split Range (Nov '08 - Dec '08),3372,1,1,Check: Count > 1000. Split required.
+16:21:10,✂️ Split Range (Nov '08 - Dec '08),1499,1,1,Check: Count > 1000. Split required.
+16:21:30,📥 COLLECT DATA,671 (Delta),8,8,Success: 1 Check + 7 Pages (671 items).
+16:21:57,📥 COLLECT DATA,967 (Delta),11,11,Success: 1 Check + 10 Pages (967 items).
+16:21:59,✂️ Split Range (Dec '08 - Dec '08),2003,1,1,Check: Count > 1000. Split required.
+16:22:28,📥 COLLECT DATA,848 (Delta),10,10,Success: 1 Check + 9 Pages (848 items).
+16:22:31,✂️ Split Range (Dec '08 - Dec '08),1306,1,1,Check: 1306 > 1000. Split required.
+16:22:53,📥 COLLECT DATA,785 (Delta),9,9,Success: 1 Check + 8 Pages (785 items).
+16:23:16,📥 COLLECT DATA,776 (Delta),9,9,Success: 1 Check + 8 Pages (776 items).
+16:23:19,✂️ Split Range (Dec '08 - Feb '09),7889,1,1,Check: Count > 1000. Split required.
+16:23:21,✂️ Split Range (Dec '08 - Jan '09),3622,1,1,Check: Count > 1000. Split required.
+16:23:23,✂️ Split Range (Dec '08 - Jan '09),1392,1,1,Check: Count > 1000. Split required.
+16:23:44,📥 COLLECT DATA,722 (Delta),9,9,Success: 1 Check + 8 Pages (722 items).
+16:24:09,📥 COLLECT DATA,813 (Delta),10,10,Success: 1 Check + 9 Pages (813 items).
+16:24:12,✂️ Split Range (Jan '09 - Jan '09),2328,1,1,Check: Count > 1000. Split required.
+16:24:14,✂️ Split Range (Jan '09 - Jan '09),1162,1,1,Check: 1162 > 1000. Precision Split.
+16:24:32,📥 COLLECT DATA,553 (Delta),7,7,Success: 1 Check + 6 Pages (553 items).
+16:24:53,📥 COLLECT DATA,767 (Delta),9,9,Success: 1 Check + 8 Pages (767 items).
+16:24:56,✂️ Split Range (Jan '09 - Jan '09),1298,1,1,Check: 1298 > 1000. Split required.
+16:25:13,📥 COLLECT DATA,639 (Delta),8,8,Success: 1 Check + 7 Pages (639 items).
+16:25:39,📥 COLLECT DATA,803 (Delta),10,10,Success: 1 Check + 9 Pages (803 items).
+16:25:43,✂️ Split Range (Jan '09 - Feb '09),4369,1,1,Check: Count > 1000. Split required.
+16:25:46,✂️ Split Range (Jan '09 - Jan '09),2134,1,1,Check: Count > 1000. Split required.
+16:25:49,✂️ Split Range (Jan '09 - Jan '09),1046,1,1,Check: 1046 > 1000. Precision Split.
+16:26:04,📥 COLLECT DATA,548 (Delta),7,7,Success: 1 Check + 6 Pages (548 items).
+16:26:24,📥 COLLECT DATA,657 (Delta),8,8,Success: 1 Check + 7 Pages (657 items).
+16:26:26,✂️ Split Range (Jan '09 - Jan '09),1239,1,1,Check: 1239 > 1000. Split required.
+16:26:42,📥 COLLECT DATA,587 (Delta),7,7,Success: 1 Check + 6 Pages (587 items).
+16:27:03,📥 COLLECT DATA,820 (Delta),10,10,Success: 1 Check + 9 Pages (820 items).
+16:27:06,✂️ Split Range (Jan '09 - Feb '09),2395,1,1,Check: Count > 1000. Split required.
+16:27:08,✂️ Split Range (Jan '09 - Feb '09),1218,1,1,Check: 1218 > 1000. Split required.
+16:27:25,📥 COLLECT DATA,639 (Delta),8,8,Success: 1 Check + 7 Pages (639 items).
+16:27:48,📥 COLLECT DATA,787 (Delta),9,9,Success: 1 Check + 8 Pages (787 items).
+16:27:50,✂️ Split Range (Feb '09 - Feb '09),1358,1,1,Check: 1358 > 1000. Split required.
+16:28:10,📥 COLLECT DATA,661 (Delta),8,8,Success: 1 Check + 7 Pages (661 items).
+16:28:33,📥 COLLECT DATA,840 (Delta),10,10,Success: 1 Check + 9 Pages (840 items).
+16:28:36,✂️ Split Range (Feb '09 - Mar '10),103863,1,1,HUGE WALL: 103k repos. Recursive split.
+16:28:39,✂️ Split Range (Feb '09 - Sep '09),40667,1,1,Check: Count > 1000. Split required.
+16:28:42,✂️ Split Range (Feb '09 - May '09),20019,1,1,Check: Count > 1000. Split required.
+16:28:44,✂️ Split Range (Feb '09 - Apr '09),9795,1,1,Check: Count > 1000. Split required.
+16:28:46,✂️ Split Range (Feb '09 - Mar '09),4928,1,1,Check: Count > 1000. Split required.
+16:28:49,✂️ Split Range (Feb '09 - Feb '09),2450,1,1,Check: Count > 1000. Split required.
+16:28:51,✂️ Split Range (Feb '09 - Feb '09),1284,1,1,Check: Count > 1000. Split required.
+16:29:08,📥 COLLECT DATA,666 (Delta),8,8,Success: 1 Check + 7 Pages (666 items).
+16:29:27,📥 COLLECT DATA,781 (Delta),9,9,Success: 1 Check + 8 Pages (781 items).
+16:29:30,✂️ Split Range (Feb '09 - Feb '09),1395,1,1,Check: 1395 > 1000. Split required.
+16:29:52,📥 COLLECT DATA,784 (Delta),9,9,Success: 1 Check + 8 Pages (784 items).
+16:30:14,📥 COLLECT DATA,781 (Delta),9,9,Success: 1 Check + 8 Pages (781 items).
+16:30:17,✂️ Split Range (Feb '09 - Mar '09),2723,1,1,Check: Count > 1000. Split required.
+16:30:20,✂️ Split Range (Feb '09 - Mar '09),1438,1,1,Check: Count > 1000. Split required.
+16:30:44,📥 COLLECT DATA,901 (Delta),11,11,Success: 1 Check + 10 Pages (901 items).
+16:31:07,📥 COLLECT DATA,754 (Delta),9,9,Success: 1 Check + 8 Pages (754 items).
+16:31:09,✂️ Split Range (Mar '09 - Mar '09),1459,1,1,Check: 1459 > 1000. Split required.
+16:31:33,📥 COLLECT DATA,787 (Delta),9,9,Success: 1 Check + 8 Pages (787 items).
+16:31:55,📥 COLLECT DATA,851 (Delta),10,10,Success: 1 Check + 9 Pages (851 items).
+16:31:57,✂️ Split Range (Mar '09 - Apr '09),5054,1,1,Check: Count > 1000. Split required.
+16:32:00,✂️ Split Range (Mar '09 - Mar '09),2471,1,1,Check: Count > 1000. Split required.
+16:32:03,✂️ Split Range (Mar '09 - Mar '09),1281,1,1,Check: 1281 > 1000. Split required.
+16:32:27,📥 COLLECT DATA,809 (Delta),10,10,Success: 1 Check + 9 Pages (809 items).
+16:32:47,📥 COLLECT DATA,691 (Delta),8,8,Success: 1 Check + 7 Pages (691 items).
+16:32:49,✂️ Split Range (Mar '09 - Mar '09),1327,1,1,Check: 1327 > 1000. Split required.
+16:33:08,📥 COLLECT DATA,675 (Delta),8,8,Success: 1 Check + 7 Pages (675 items).
+16:33:30,📥 COLLECT DATA,829 (Delta),10,10,Success: 1 Check + 9 Pages (829 items).
+16:33:32,✂️ Split Range (Mar '09 - Apr '09),2747,1,1,Check: Count > 1000. Split required.
+16:33:34,✂️ Split Range (Mar '09 - Mar '09),1351,1,1,Check: Count > 1000. Split required.
+16:33:54,📥 COLLECT DATA,779 (Delta),9,9,Success: 1 Check + 8 Pages (779 items).
+16:34:14,📥 COLLECT DATA,797 (Delta),9,9,Success: 1 Check + 8 Pages (797 items).
+16:34:15,✂️ Split Range (Mar '09 - Apr '09),1562,1,1,Check: Count > 1000. Split required.
+16:34:36,📥 COLLECT DATA,788 (Delta),9,9,Success: 1 Check + 8 Pages (788 items).
+16:34:38,✂️ Split Range (Mar '09 - Apr '09),1043,1,1,Check: 1043 > 1000. Precision Split.
+16:34:56,📥 COLLECT DATA,710 (Delta),9,9,Success: 1 Check + 8 Pages (710 items).
+16:35:13,📥 COLLECT DATA,558 (Delta),7,7,Success: 1 Check + 6 Pages (558 items).
+16:35:15,✂️ Split Range (Apr '09 - May '09),10387,1,1,Check: Count > 1000. Split required.
+16:35:18,✂️ Split Range (Apr '09 - Apr '09),5084,1,1,Check: Count > 1000. Split required.
+16:35:20,✂️ Split Range (Apr '09 - Apr '09),2442,1,1,Check: Count > 1000. Split required.
+16:35:22,✂️ Split Range (Apr '09 - Apr '09),1309,1,1,Check: 1309 > 1000. Split required.
+16:35:40,📥 COLLECT DATA,714 (Delta),9,9,Success: 1 Check + 8 Pages (714 items).
+16:36:01,📥 COLLECT DATA,780 (Delta),9,9,Success: 1 Check + 8 Pages (780 items).
+16:36:03,✂️ Split Range (Apr '09 - Apr '09),1321,1,1,Check: 1321 > 1000. Split required.
+16:36:23,📥 COLLECT DATA,729 (Delta),9,9,Success: 1 Check + 8 Pages (729 items).
+16:36:45,📥 COLLECT DATA,779 (Delta),9,9,Success: 1 Check + 8 Pages (779 items).
+16:36:48,✂️ Split Range (Apr '09 - Apr '09),2827,1,1,Check: Count > 1000. Split required.
+16:36:50,✂️ Split Range (Apr '09 - Apr '09),1432,1,1,Check: Count > 1000. Split required.
+16:37:15,📥 COLLECT DATA,781 (Delta),9,9,Success: 1 Check + 8 Pages (781 items).
+16:37:40,📥 COLLECT DATA,853 (Delta),10,10,Success: 1 Check + 9 Pages (853 items).
+16:37:42,✂️ Split Range (Apr '09 - Apr '09),1639,1,1,Check: 1639 > 1000. Split required.
+16:38:04,📥 COLLECT DATA,902 (Delta),11,11,Success: 1 Check + 10 Pages (902 items).
+16:38:28,📥 COLLECT DATA,950 (Delta),11,11,Success: 1 Check + 10 Pages (950 items).
+16:38:31,✂️ Split Range (Apr '09 - May '09),5502,1,1,Check: Count > 1000. Split required.
+16:38:33,✂️ Split Range (Apr '09 - May '09),2821,1,1,Check: Count > 1000. Split required.
+16:38:35,✂️ Split Range (Apr '09 - May '09),1336,1,1,Check: 1336 > 1000. Split required.
+16:38:54,📥 COLLECT DATA,737 (Delta),9,9,Success: 1 Check + 8 Pages (737 items).
+16:39:14,📥 COLLECT DATA,748 (Delta),9,9,Success: 1 Check + 8 Pages (748 items).
+16:39:16,✂️ Split Range (May '09 - May '09),1710,1,1,Check: Count > 1000. Split required.
+16:39:40,📥 COLLECT DATA,941 (Delta),11,11,Success: 1 Check + 10 Pages (941 items).
+16:40:05,📥 COLLECT DATA,979 (Delta),11,11,Success: 1 Check + 10 Pages (979 items).
+16:40:08,✂️ Split Range (May '09 - May '09),2928,1,1,Check: Count > 1000. Split required.
+16:40:11,✂️ Split Range (May '09 - May '09),1434,1,1,Check: Count > 1000. Split required.
+16:40:36,📥 COLLECT DATA,930 (Delta),11,11,Success: 1 Check + 10 Pages (930 items).
+16:40:58,📥 COLLECT DATA,717 (Delta),9,9,Success: 1 Check + 8 Pages (717 items).
+16:41:01,✂️ Split Range (May '09 - May '09),1682,1,1,Check: Count > 1000. Split required.
+16:41:25,📥 COLLECT DATA,989 (Delta),11,11,Success: 1 Check + 10 Pages (989 items).
+16:41:49,📥 COLLECT DATA,985 (Delta),11,11,Success: 1 Check + 10 Pages (985 items).
+16:41:51,✂️ Split Range (May '09 - Sep '09),20846,1,1,Hit Wall (20k). Drilling down.
+16:41:54,✂️ Split Range (May '09 - Jul '09),10125,1,1,Check: Count > 1000. Split required.
+16:41:57,✂️ Split Range (May '09 - Jun '09),5305,1,1,Check: Count > 1000. Split required.
+16:41:59,✂️ Split Range (May '09 - Jun '09),2679,1,1,Check: Count > 1000. Split required.
+16:42:01,✂️ Split Range (May '09 - May '09),1459,1,1,Check: Count > 1000. Split required.
+16:42:25,📥 COLLECT DATA,893 (Delta),10,10,Success: 1 Check + 9 Pages (893 items).
+16:42:48,📥 COLLECT DATA,776 (Delta),9,9,Success: 1 Check + 8 Pages (776 items).
+16:42:51,✂️ Split Range (May '09 - Jun '09),1384,1,1,Check: Count > 1000. Split required.
+16:43:11,📥 COLLECT DATA,784 (Delta),9,9,Success: 1 Check + 8 Pages (784 items).
+16:43:35,📥 COLLECT DATA,834 (Delta),10,10,Success: 1 Check + 9 Pages (834 items).
+16:43:38,✂️ Split Range (Jun '09 - Jun '09),2794,1,1,Check: Count > 1000. Split required.
+16:43:40,✂️ Split Range (Jun '09 - Jun '09),1461,1,1,Check: Count > 1000. Split required.
+16:44:02,📥 COLLECT DATA,861 (Delta),10,10,Success: 1 Check + 9 Pages (861 items).
+16:44:27,📥 COLLECT DATA,936 (Delta),11,11,Success: 1 Check + 10 Pages (936 items).
+16:44:29,✂️ Split Range (Jun '09 - Jun '09),1545,1,1,Check: Count > 1000. Split required.
+16:44:51,📥 COLLECT DATA,777 (Delta),9,9,Success: 1 Check + 8 Pages (777 items).
+16:45:17,📥 COLLECT DATA,980 (Delta),11,11,Success: 1 Check + 10 Pages (980 items).
+16:45:20,✂️ Split Range (Jun '09 - Jul '09),5017,1,1,Check: Count > 1000. Split required.
+16:45:22,✂️ Split Range (Jun '09 - Jul '09),2598,1,1,Check: Count > 1000. Split required.
+16:45:24,✂️ Split Range (Jun '09 - Jun '09),1323,1,1,Check: 1323 > 1000. Split required.
+16:45:42,📥 COLLECT DATA,674 (Delta),8,8,Success: 1 Check + 7 Pages (674 items).
+16:46:03,📥 COLLECT DATA,838 (Delta),10,10,Success: 1 Check + 9 Pages (838 items).
+16:46:05,✂️ Split Range (Jun '09 - Jul '09),1512,1,1,Check: 1512 > 1000. Split required.
+16:46:25,📥 COLLECT DATA,717 (Delta),9,9,Success: 1 Check + 8 Pages (717 items).
+16:46:49,📥 COLLECT DATA,975 (Delta),11,11,Success: 1 Check + 10 Pages (975 items).
+16:46:51,✂️ Split Range (Jul '09 - Jul '09),2631,1,1,Check: Count > 1000. Split required.
+16:46:53,✂️ Split Range (Jul '09 - Jul '09),1296,1,1,Check: 1296 > 1000. Split required.
+16:47:14,📥 COLLECT DATA,683 (Delta),8,8,Success: 1 Check + 7 Pages (683 items).
+16:47:32,📥 COLLECT DATA,746 (Delta),9,9,Success: 1 Check + 8 Pages (746 items).
+16:47:35,✂️ Split Range (Jul '09 - Jul '09),1566,1,1,Check: Count > 1000. Split required.
+16:47:56,📥 COLLECT DATA,766 (Delta),9,9,Success: 1 Check + 8 Pages (766 items).
+16:48:21,📥 COLLECT DATA,920 (Delta),11,11,Success: 1 Check + 10 Pages (920 items).
+16:48:23,✂️ Split Range (Jul '09 - Sep '09),10956,1,1,Hit Wall (10k). Recursive split.
+16:48:26,✂️ Split Range (Jul '09 - Aug '09),5298,1,1,Check: Count > 1000. Split required.
+16:48:28,✂️ Split Range (Jul '09 - Jul '09),2723,1,1,Check: Count > 1000. Split required.
+16:48:30,✂️ Split Range (Jul '09 - Jul '09),1444,1,1,Check: Count > 1000. Split required.
+16:48:50,📥 COLLECT DATA,798 (Delta),9,9,Success: 1 Check + 8 Pages (798 items).
+16:49:12,📥 COLLECT DATA,819 (Delta),10,10,Success: 1 Check + 9 Pages (819 items).
+16:49:14,✂️ Split Range (Jul '09 - Jul '09),1508,1,1,Check: Count > 1000. Split required.
+16:49:16,✂️ Split Range (Jul '09 - Jul '09),1030,1,1,Check: 1030 > 1000. Precision Split.
+16:49:28,📥 COLLECT DATA,511 (Delta),7,7,Success: 1 Check + 6 Pages (511 items).
+16:49:48,📥 COLLECT DATA,801 (Delta),10,10,Success: 1 Check + 9 Pages (801 items).
+16:50:11,📥 COLLECT DATA,763 (Delta),9,9,Success: 1 Check + 8 Pages (763 items).
+16:50:13,✂️ Split Range (Jul '09 - Aug '09),2780,1,1,Check: Count > 1000. Split required.
+16:50:15,✂️ Split Range (Jul '09 - Aug '09),1369,1,1,Check: 1369 > 1000. Split required.
+16:50:37,📥 COLLECT DATA,881 (Delta),10,10,Success: 1 Check + 9 Pages (881 items).
+16:50:59,📥 COLLECT DATA,715 (Delta),9,9,Success: 1 Check + 8 Pages (715 items).
+16:51:01,✂️ Split Range (Aug '09 - Aug '09),1551,1,1,Check: Count > 1000. Split required.
+16:51:22,📥 COLLECT DATA,721 (Delta),9,9,Success: 1 Check + 8 Pages (721 items).
+16:51:25,✂️ Split Range (Aug '09 - Aug '09),1033,1,1,Check: 1033 > 1000. Precision Split.
+16:51:42,📥 COLLECT DATA,657 (Delta),8,8,Success: 1 Check + 7 Pages (657 items).
+16:51:59,📥 COLLECT DATA,611 (Delta),8,8,Success: 1 Check + 7 Pages (611 items).
+16:52:01,✂️ Split Range (Aug '09 - Sep '09),5841,1,1,Check: Count > 1000. Split required.
+16:52:03,✂️ Split Range (Aug '09 - Aug '09),2832,1,1,Check: Count > 1000. Split required.
+16:52:06,✂️ Split Range (Aug '09 - Aug '09),1417,1,1,Check: Count > 1000. Split required.
+16:52:28,📥 COLLECT DATA,828 (Delta),10,10,Success: 1 Check + 9 Pages (828 items).
+16:52:55,📥 COLLECT DATA,797 (Delta),9,9,Success: 1 Check + 8 Pages (797 items).
+16:52:58,✂️ Split Range (Aug '09 - Aug '09),1569,1,1,Check: Count > 1000. Split required.
+16:53:17,📥 COLLECT DATA,719 (Delta),9,9,Success: 1 Check + 8 Pages (719 items).
+16:53:20,✂️ Split Range (Aug '09 - Aug '09),1065,1,1,Check: 1065 > 1000. Precision Split.
+16:53:38,📥 COLLECT DATA,685 (Delta),8,8,Success: 1 Check + 7 Pages (685 items).
+16:53:54,📥 COLLECT DATA,604 (Delta),8,8,Success: 1 Check + 7 Pages (604 items).
+16:53:56,✂️ Split Range (Aug '09 - Sep '09),3185,1,1,Check: Count > 1000. Split required.
+16:53:59,✂️ Split Range (Aug '09 - Aug '09),1554,1,1,Check: Count > 1000. Split required.
+16:54:20,📥 COLLECT DATA,826 (Delta),10,10,Success: 1 Check + 9 Pages (826 items).
+16:54:44,📥 COLLECT DATA,985 (Delta),11,11,Success: 1 Check + 10 Pages (985 items).
+16:54:47,✂️ Split Range (Aug '09 - Sep '09),1863,1,1,Check: Count > 1000. Split required.
+16:55:09,📥 COLLECT DATA,856 (Delta),10,10,Success: 1 Check + 9 Pages (856 items).
+16:55:11,✂️ Split Range (Aug '09 - Sep '09),1251,1,1,Check: 1251 > 1000. Split required.
+16:55:33,📥 COLLECT DATA,730 (Delta),9,9,Success: 1 Check + 8 Pages (730 items).
+16:55:53,📥 COLLECT DATA,746 (Delta),9,9,Success: 1 Check + 8 Pages (746 items).
+16:55:56,✂️ Split Range (Sep '09 - Mar '10),63459,1,1,HUGE WALL (63k). Rapid splitting.
+16:55:59,✂️ Split Range (Sep '09 - Dec '09),27077,1,1,Check: Count > 1000. Split required.
+16:56:02,✂️ Split Range (Sep '09 - Oct '09),12397,1,1,Check: Count > 1000. Split required.
+16:56:04,✂️ Split Range (Sep '09 - Sep '09),5929,1,1,Check: Count > 1000. Split required.
+16:56:08,✂️ Split Range (Sep '09 - Sep '09),3050,1,1,Check: Count > 1000. Split required.
+16:56:10,✂️ Split Range (Sep '09 - Sep '09),1658,1,1,Check: Count > 1000. Split required.
+16:56:32,📥 COLLECT DATA,895 (Delta),10,10,Success: 1 Check + 9 Pages (895 items).
+16:56:35,✂️ Split Range (Sep '09 - Sep '09),1033,1,1,Check: 1033 > 1000. Precision Split.
+16:56:51,📥 COLLECT DATA,531 (Delta),7,7,Success: 1 Check + 6 Pages (531 items).
+16:57:11,📥 COLLECT DATA,763 (Delta),9,9,Success: 1 Check + 8 Pages (763 items).
+16:57:14,✂️ Split Range (Sep '09 - Sep '09),1633,1,1,Check: Count > 1000. Split required.
+16:57:37,📥 COLLECT DATA,858 (Delta),10,10,Success: 1 Check + 9 Pages (858 items).
+16:58:01,📥 COLLECT DATA,949 (Delta),11,11,Success: 1 Check + 10 Pages (949 items).
+16:58:04,✂️ Split Range (Sep '09 - Sep '09),3119,1,1,Check: Count > 1000. Split required.
+16:58:06,✂️ Split Range (Sep '09 - Sep '09),1535,1,1,Check: Count > 1000. Split required.
+16:58:31,📥 COLLECT DATA,887 (Delta),10,10,Success: 1 Check + 9 Pages (887 items).
+16:58:53,📥 COLLECT DATA,829 (Delta),10,10,Success: 1 Check + 9 Pages (829 items).
+16:58:56,✂️ Split Range (Sep '09 - Sep '09),1837,1,1,Check: Count > 1000. Split required.
+16:59:24,📥 COLLECT DATA,932 (Delta),11,11,Success: 1 Check + 10 Pages (932 items).
+16:59:26,✂️ Split Range (Sep '09 - Sep '09),1128,1,1,Check: 1128 > 1000. Precision Split.
+16:59:43,📥 COLLECT DATA,619 (Delta),8,8,Success: 1 Check + 7 Pages (619 items).
+17:00:01,📥 COLLECT DATA,708 (Delta),9,9,Success: 1 Check + 8 Pages (708 items).
+17:00:03,✂️ Split Range (Sep '09 - Oct '09),6728,1,1,Check: Count > 1000. Split required.
+17:00:06,✂️ Split Range (Sep '09 - Oct '09),3440,1,1,Check: Count > 1000. Split required.
+17:00:09,✂️ Split Range (Sep '09 - Oct '09),1698,1,1,Check: Count > 1000. Split required.
+17:00:11,✂️ Split Range (Sep '09 - Oct '09),1014,1,1,Check: 1014 > 1000. Precision Split.
+17:00:29,📥 COLLECT DATA,524 (Delta),7,7,Success: 1 Check + 6 Pages (524 items).
+17:00:50,📥 COLLECT DATA,754 (Delta),9,9,Success: 1 Check + 8 Pages (754 items).
+17:01:14,📥 COLLECT DATA,919 (Delta),11,11,Success: 1 Check + 10 Pages (919 items).
+17:01:16,✂️ Split Range (Oct '09 - Oct '09),2019,1,1,Check: Count > 1000. Split required.
+17:01:19,✂️ Split Range (Oct '09 - Oct '09),1054,1,1,Check: 1054 > 1000. Precision Split.
+17:01:34,📥 COLLECT DATA,552 (Delta),7,7,Success: 1 Check + 6 Pages (552 items).
+17:01:56,📥 COLLECT DATA,777 (Delta),9,9,Success: 1 Check + 8 Pages (777 items).
+17:01:59,✂️ Split Range (Oct '09 - Oct '09),1214,1,1,Check: 1214 > 1000. Split required.
+17:02:22,📥 COLLECT DATA,733 (Delta),9,9,Success: 1 Check + 8 Pages (733 items).
+17:02:42,📥 COLLECT DATA,712 (Delta),9,9,Success: 1 Check + 8 Pages (712 items).
+17:02:45,✂️ Split Range (Oct '09 - Oct '09),3563,1,1,Check: Count > 1000. Split required.
+17:02:47,✂️ Split Range (Oct '09 - Oct '09),1724,1,1,Check: Count > 1000. Split required.
+17:02:50,✂️ Split Range (Oct '09 - Oct '09),1070,1,1,Check: 1070 > 1000. Precision Split.
+17:03:06,📥 COLLECT DATA,538 (Delta),7,7,Success: 1 Check + 6 Pages (538 items).
+17:03:06,🏁 Run Complete,Total: 100166,0,0,Finished with 100% Data Integrity.
