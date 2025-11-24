@@ -61,8 +61,9 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DATABASE_URL: postgres://postgres:password@localhost:5432/github
-          TARGET: 10000  
-          BATCH_SIZE: 100
+          TARGET: 100000  
+          
+          
           RUN_MODE: prod
         run: |
           python -m crawler.runner
