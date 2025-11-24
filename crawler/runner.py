@@ -1,6 +1,7 @@
 # FILE: crawler/runner.py
 
 import os
+import math
 from dotenv import load_dotenv
 
 # Load env before imports
@@ -11,7 +12,6 @@ from crawler.graphql_queries import SEARCH_QUERY
 from crawler.slicer import split_date_range
 from crawler.db import get_conn, insert_staging_batch, upsert_from_staging
 from crawler.config import RUN_MODE, TARGET, BATCH_SIZE
-# Import our new helpers
 from crawler.helpers import get_logger, get_utc_now_iso, transform_repo_node
 
 logger = get_logger("Runner")
@@ -48,7 +48,6 @@ def paginate_slice_and_collect(query_string, conn):
             break
 
         for n in nodes:
-            # CLEANER: Use helper function for transformation
             repo_tuple = transform_repo_node(n, query_string)
             batch.append(repo_tuple)
             total += 1
@@ -75,28 +74,47 @@ def run():
     conn = get_conn()
     
     start = '2008-01-01'
-    # CLEANER: Use helper for time
     end = get_utc_now_iso()
     
     queue = [(start, end)]
+    
+    # --- METRICS DASHBOARD VARIABLES ---
     collected = 0
+    total_points = 0
+    total_requests = 0
+    current_remaining = "Unknown" 
 
     while queue and collected < target:
         s, e = queue.pop(0)
         query_str = f"is:public created:{s}..{e}"
         
+        # 1. SCOUT STEP (Costs 1 Point)
         count, rate = estimate_count(query_str)
+        
+        # Update Metrics
+        total_points += 1
+        total_requests += 1
+        if rate:
+            current_remaining = rate.get('remaining', 'Unknown')
+            
         ensure_rate_limit_sleep(rate)
 
         if count == 0:
             continue
 
         if count > 1000:
-            logger.info(f"Splitting range {s}..{e} ({count} repos)")
+            # Just log the overhead here
+            logger.info(f"✂️ Splitting range {s}..{e} ({count} repos) | 💸 Cost: 1pt")
             split = split_date_range(s, e)
             if not split:
-                # Fallback: Crawl what we can if we can't split further
+                # Fallback collection
                 n = paginate_slice_and_collect(query_str, conn)
+                
+                # Calculate Cost (100 items = 1 Page = 1 Point)
+                pages_cost = math.ceil(n / 100) if n > 0 else 1
+                total_points += pages_cost
+                total_requests += pages_cost
+                
                 collected += n
                 upsert_from_staging(conn)
                 continue
@@ -106,12 +124,35 @@ def run():
             queue.insert(0, left)
             continue
 
+        # 2. COLLECTION STEP
         n = paginate_slice_and_collect(query_str, conn)
+        
+        # Calculate Cost for this batch
+        pages_cost = math.ceil(n / 100) if n > 0 else 1
+        
+        total_points += pages_cost
+        total_requests += pages_cost
         collected += n
+        
         upsert_from_staging(conn)
-        logger.info(f"Collected so far: {collected} / {target}")
+        
+        # --- LIVE DASHBOARD LOG ---
+        logger.info(
+            f"📥 Collected: {collected}/{target} | "
+            f"💸 Points Burned: {total_points} | "
+            f"⛽ Fuel Remaining: {current_remaining}"
+        )
 
-    logger.info(f"Run complete. Total collected: {collected}")
+    # FINAL SUMMARY REPORT
+    logger.info("="*50)
+    logger.info(f"🏁 RUN COMPLETE")
+    logger.info(f"📚 Total Repos Collected: {collected}")
+    logger.info(f"💳 Total API Points:      {total_points}")
+    logger.info(f"📡 Total HTTP Requests:   {total_requests}")
+    
+    efficiency = collected / total_points if total_points > 0 else 0
+    logger.info(f"⚡ Efficiency Score:      {efficiency:.2f} repos per point")
+    logger.info("="*50)
 
 if __name__ == '__main__':
     run()
